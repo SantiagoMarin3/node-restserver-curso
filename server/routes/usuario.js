@@ -60,8 +60,6 @@ app.post('/usuario', [verificaToken, verificaAdminRole], (req, res) => {
             usuario: usuarioDB
         })
     });
-
-
 });
 
 app.put('/usuario/:id', [verificaToken, verificaAdminRole], (req, res) => {
